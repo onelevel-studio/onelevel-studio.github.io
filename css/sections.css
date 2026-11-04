@@ -1,0 +1,70 @@
+/* Sections de contenu : hero, à propos, compte à rebours, score */
+.hero {
+    text-align: center;
+    background: url('Jumpix.png') no-repeat center/cover;
+    color: #fff;
+    padding: 150px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.about, .contact {
+    text-align: center;
+}
+
+.countdown {
+    text-align: center;
+    background-color: #272740;
+    padding: 60px 20px;
+}
+
+.countdown h2 {
+    font-size: 2.5rem;
+    color: #ff5c5c;
+    margin-bottom: 10px;
+}
+
+.countdown p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #1e1e2f;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.score {
+    text-align: center;
+    background-color: #272740;
+    padding: 60px 20px;
+}
+
+.score h2 {
+    font-size: 2.5rem;
+    color: #ff5c5c;
+    margin-bottom: 15px;
+}
+
+#scoreValue {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #1e1e2f;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+}

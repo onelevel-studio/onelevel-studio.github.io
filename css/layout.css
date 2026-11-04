@@ -1,0 +1,30 @@
+/* Layout : header, navigation, footer */
+header {
+    background-color: #272740;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ff5c5c;
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5c5c;
+}
+
+footer {
+    background-color: #272740;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
