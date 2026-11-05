@@ -1,7 +1,7 @@
 /* Sections de contenu : hero, à propos, compte à rebours, score */
 .hero {
     text-align: center;
-    background: url('Jumpix.png') no-repeat center/cover;
+    background: url('../Jumpix.png') no-repeat center/cover;
     color: #fff;
     padding: 150px 20px;
 }
