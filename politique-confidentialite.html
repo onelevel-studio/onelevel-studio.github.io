@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité – OneLevel Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #222;
+        }
+        header {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 8px; font-size: 1.6rem; }
+        header a { color: #fff; }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        main h2 { margin-top: 32px; font-size: 1.3rem; }
+        main h2:first-of-type { margin-top: 0; }
+        .updated { color: #666; font-size: 0.9rem; }
+        a { color: #0b57d0; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            main { margin: 15px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OneLevel Studio</h1>
+        <a href="index.html">← Retour au site</a>
+    </header>
+
+    <main>
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">Dernière mise à jour : 9 novembre 2026</p>
+
+        <p>Cette page explique quelles données sont collectées sur le site OneLevel Studio, pourquoi, et comment vous pouvez exercer vos droits, conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.</p>
+
+        <h2>1. Responsable du traitement</h2>
+        <p>Le site est édité par OneLevel Studio.<br>
+        Contact : <a href="mailto:onelevel.studio.contact@gmail.com">onelevel.studio.contact@gmail.com</a></p>
+
+        <h2>2. Données collectées</h2>
+        <p><strong>Formulaire de contact.</strong> Lorsque vous nous écrivez via le formulaire, nous collectons votre nom, votre adresse e-mail et le contenu de votre message. Ces données servent uniquement à répondre à votre demande. Le formulaire est géré par le service <a href="https://getform.io" target="_blank" rel="noopener noreferrer">Getform</a>, qui transmet les messages au studio.</p>
+        <p><strong>Mesure d'audience.</strong> Si vous acceptez les cookies, le site charge Google Tag Manager afin de mesurer la fréquentation et d'améliorer le site. Des données techniques (pages visitées, type d'appareil, navigateur, adresse IP…) peuvent alors être traitées par Google. Si vous refusez, Google Tag Manager n'est jamais chargé.</p>
+        <p><strong>Votre choix sur les cookies.</strong> Votre réponse à la bannière (accepté ou refusé) est enregistrée dans le stockage local de votre navigateur (clé <code>cookie-consent</code>). Cette information reste sur votre appareil et n'est pas transmise.</p>
+
+        <h2>3. Bases légales</h2>
+        <ul>
+            <li>Mesure d'audience : votre <strong>consentement</strong>, que vous pouvez retirer à tout moment.</li>
+            <li>Formulaire de contact : notre <strong>intérêt légitime</strong> à répondre aux messages qui nous sont adressés.</li>
+        </ul>
+
+        <h2>4. Durée de conservation</h2>
+        <p>Les messages reçus via le formulaire sont conservés le temps nécessaire au traitement de votre demande, puis supprimés. Votre choix sur les cookies est conservé dans votre navigateur jusqu'à ce que vous l'effaciez ou que vous le modifiiez.</p>
+
+        <h2>5. Destinataires et transferts</h2>
+        <p>Vos données ne sont ni vendues ni cédées. Elles peuvent être traitées par nos prestataires techniques : Getform (formulaire) et Google (mesure d'audience, uniquement si vous avez accepté). Google et Getform pouvant être établis hors de l'Union européenne, des transferts de données vers des pays tiers sont possibles ; ils sont encadrés par les mécanismes prévus par le RGPD.</p>
+
+        <h2>6. Liens externes</h2>
+        <p>Le site contient des liens vers d'autres sites (GitHub Pages, YouTube, WhatsApp, sites partenaires…). Ces sites ont leur propre politique de confidentialité, sur laquelle nous n'avons pas de contrôle.</p>
+
+        <h2>7. Vos droits</h2>
+        <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données. Pour les exercer, écrivez-nous à <a href="mailto:onelevel.studio.contact@gmail.com">onelevel.studio.contact@gmail.com</a>.</p>
+        <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>.</p>
+
+        <h2>8. Modifier votre choix sur les cookies</h2>
+        <p>Vous pouvez changer d'avis à tout moment : <a href="#" id="cookie-manage">Gérer les cookies</a>. La bannière s'affichera de nouveau sur la page d'accueil.</p>
+
+        <h2>9. Modifications</h2>
+        <p>Cette politique peut évoluer. La date de dernière mise à jour est indiquée en haut de la page.</p>
+    </main>
+
+    <footer>
+        &copy; <span id="year">2026</span> OneLevel Studio. Tous droits réservés.
+    </footer>
+
+    <script>
+        document.getElementById('cookie-manage').addEventListener('click', function (e) {
+            e.preventDefault();
+            try { localStorage.removeItem('cookie-consent'); } catch (err) {}
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
