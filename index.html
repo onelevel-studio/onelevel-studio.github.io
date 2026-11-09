@@ -165,9 +165,11 @@
 </form>
     </section>
     <footer>
-        &copy; 2026 OneLevel Studio. Tous droits réservés.
+        &copy; <span id="year">2026</span> OneLevel Studio. Tous droits réservés.
         <br>
         <a href="#" id="cookie-manage" style="color: inherit; text-decoration: underline; font-size: 0.9rem;">Gérer les cookies</a>
+        <br>
+        <a href="politique-confidentialite.html" style="color: inherit; text-decoration: underline; font-size: 0.9rem;">Politique de confidentialité</a>
         <br><br>
         <a href="mailto:onelevel.studio.contact@gmail.com" target="_blank" 
        style="display: inline-block; margin-top: 10px;">
@@ -187,7 +189,9 @@
     </footer>
     <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies" hidden>
         <p>
-            Nous utilisons les cookies pour mesurer l'audience du site et l'améliorer.
+            🍪 Nous utilisons des cookies pour mesurer l'audience du site et l'améliorer.
+            Vous pouvez accepter ou refuser, c'est vous qui décidez.
+            <a href="politique-confidentialite.html" style="color: inherit; text-decoration: underline;">En savoir plus</a>
         </p>
         <div class="cookie-buttons">
             <button id="cookie-refuse" type="button">Refuser</button>
@@ -196,5 +200,8 @@
     </div>
 
     <script src="cookies.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
