@@ -28,3 +28,55 @@ footer {
     padding: 20px;
     color: #aaa;
 }
+
+/* Footer : copyright à gauche, liens à droite */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #ff5c5c;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
